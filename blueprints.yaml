@@ -1,0 +1,40 @@
+name: Private Updater
+slug: private-updater
+type: plugin
+version: 0.1.0
+description: "An Update button for private git packages. Lists the themes and plugins pinned in user/.dependencies, shows newer release tags, and checks them out in place."
+icon: code-branch
+author:
+  name: Eymeric Chauchat
+  url: https://chauquest.com
+homepage: https://github.com/Eymeric65/grav-plugin-private-updater
+keywords: git, update, private, dependencies, deploy
+bugs: https://github.com/Eymeric65/grav-plugin-private-updater/issues
+readme: https://github.com/Eymeric65/grav-plugin-private-updater/blob/main/README.md
+license: MIT
+
+compatibility:
+  grav: ['2.0']
+
+dependencies:
+  - { name: grav, version: '>=2.0.0' }
+  - { name: api, version: '>=1.0.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    ssh_key:
+      type: text
+      label: SSH private key
+      placeholder: /home/me/.ssh/deploy_key
+      help: "Absolute path of the key git should use. Leave empty to use the account's own SSH setup (~/.ssh/config)."
