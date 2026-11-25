@@ -46,7 +46,7 @@ Requirements: Grav 2, the API plugin (it comes with Grav 2), and `git` on the se
 
 ```bash
 cd user/plugins
-git clone https://github.com/Eymeric65/grav-plugin-private-updater.git private-updater
+git clone https://github.com/Alliance-Francaise/grav-plugin-private-updater.git private-updater
 ```
 
 Or add it to your `user/.dependencies` and let `bin/grav install` clone it.
