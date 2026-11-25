@@ -7,10 +7,10 @@ icon: code-branch
 author:
   name: Eymeric Chauchat
   url: https://chauquest.com
-homepage: https://github.com/Eymeric65/grav-plugin-private-updater
+homepage: https://github.com/Alliance-Francaise/grav-plugin-private-updater
 keywords: git, update, private, dependencies, deploy
-bugs: https://github.com/Eymeric65/grav-plugin-private-updater/issues
-readme: https://github.com/Eymeric65/grav-plugin-private-updater/blob/main/README.md
+bugs: https://github.com/Alliance-Francaise/grav-plugin-private-updater/issues
+readme: https://github.com/Alliance-Francaise/grav-plugin-private-updater/blob/main/README.md
 license: MIT
 
 compatibility:
